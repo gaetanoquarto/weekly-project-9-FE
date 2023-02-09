@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricarica smartphone</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous'><script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3' crossorigin='anonymous'></script>
+</head>
+<body>
+
+  <h1 class="text-center">Sezione ricarica</h1>
+
+  
+
+    <div class="container mt-5 text-center">
+      <div class="card mb-5">
+        <div class="card-header text-center">
+          Sezione Utente
+        </div>
+        <div class="card-body text-center">
+          <h5 id="utente" class="card-title">Informazioni utente: </h5>
+      <p id="credito" class="card-text">Credito residuo: </p>
+      <p id="chiamate" class="card-text">Chiamate effettuate: </p>
+        </div>
+      </div>
+        <h2 id="Titolo" class="text-center">Effettua una ricarica</h2>
+
+        <form>
+            <div class="container mb-5 text-center">
+              <select class="form-select mb-3 text-center" id="inputNumero">
+                <option selected>Seleziona il numero da ricaricare</option>
+                <option value="3500484901">3500484901</option>
+                <option value="3500484902">3500484902</option>
+                <option value="3500484903">3500484903</option>
+              </select>
+              <button type="button" class="btn btn-warning mb-3 d-inline" id="controllaNumero">Controlla informazioni numero</button>
+                    <h5 class="mb-3">Scegli l'importo della ricarica</h5>
+                    <button type="button" class="btn btn-primary d-inline" id="dieci">10</button> <button type="button" class="btn btn-primary d-inline" id="venti">20</button> <button type="button" class="btn btn-primary d-inline" id="cinquanta">50</button> <button type="button" class="btn btn-primary d-inline" id="cento">100</button>
+                    <p id="errore" class="text-danger"></p>
+                </div>
+                  <div class="mb-3">
+                    <h2>Effettua una chiamata</h2>
+                    <label for="numerochiama" class="form-label">Inserisci numero da chiamare</label>
+                    <input type="number" class="form-control mb-3 text-center" id="numeroChiama">
+                    <button type="button" class="btn btn-success d-inline" id="chiama">chiama</button>
+                    <button type="button" class="btn btn-secondary d-inline" id="azzeraChiam">azzera chiamate</button>
+                    <p id="erroreChiamate" class="text-danger"></p>
+                    
+
+   
+
+                  </div>
+                  </div>                
+        <!-- <input type="number" placeholder="Inserisci il tuo numero" id="numero" class="text-center">
+        <button type="button" id="dieci" class="btn btn-primary">10 &euro;</button>
+        <button type="button" id="venti" class="btn btn-primary">20 &euro;</button>
+        <button type="button" id="cinquanta" class="btn btn-primary">50 &euro;</button>
+        <button type="button" id="cento" class="btn btn-primary">100 &euro;</button>
+        <input type="number" placeholder="Inserisci numero da chiamare" id="numeroChiam"
+          class="w-50 mx-auto mt-3 text-center">
+        <input type="text" placeholder="Secondi della telefonata" id="secondiChiam" class="w-25 mx-auto mt-2 text-center">
+        <button type="button" class="btn btn-success mx-auto mt-2" id="inoltraChiam">Inoltra Chiamata</button>
+        <button type="button" class="btn btn-light mx-auto mt-2" id="infoChiamate">Chiamate Effettuate</button>
+        <button type="button" class="btn btn-warning mx-auto mt-2" id="azzeraChiam">Azzera Chiamate</button>
+        <p id="errore" class="text-danger">Numero non registrato. Inserisci un numero corretto!</p> -->
+    </form>
+</div>
+      </div>
+  
+    </main><!-- End #main -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
